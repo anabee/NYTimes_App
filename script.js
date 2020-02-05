@@ -4,6 +4,7 @@ $(document).ready(function(){
 
     $("#searchBtn").on("click",function(event){
         event.preventDefault();
+        $(".articles").empty();
         var queryURL = "";
         var searchTerm = $("#searchTermInput").val(); //we get input
         console.log(searchTerm);
@@ -56,7 +57,8 @@ $(document).ready(function(){
             }
         });
 
-        $("#submitBtn").on("click",function(){
+        $("#submitBtn").on("click",function(event){
+            event.preventDefault();
             $(".form-control").val("");
             $(".articles").empty();
         })
