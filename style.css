@@ -3,8 +3,9 @@
 }
 
 .header-styling {
-    background-image: linear-gradient(#ADD8E6
+    background-image: linear-gradient(#191970
     , #4682B4);
+    text-align: center;
 }
 body {
   text-align: left;
@@ -20,4 +21,8 @@ body {
   border-right: 2px solid black;
   border-bottom: 2px solid black;
   margin-top: 80px;
+}
+
+#searchBtn , #submitBtn {
+    background-color: #4682B4;
 }
