@@ -11,11 +11,16 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+    <script src="https://kit.fontawesome.com/0b5f1c4663.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
     <div class="container-fluid">
-        NY Times 
+        <div class="header-styling">
+                <span style="font-size: 4em; color: white; text-align: center;">
+                    <i class="far fa-newspaper"></i>
+                    <h1>New York Times Search</h1>
+        </div>
     </div>
 
     <div class="container">
@@ -42,8 +47,8 @@
                                 <label for="endYear">Start Year (Optional):</label>
                                 <input type="number" class="form-control" id="endYearInput">
                         </div>
-                    <button type="submit" class="btn btn-primary">Search</button>
-                    <button type="submit" class="btn btn-primary">Clear Results</button>
+                    <button type="submit" class="btn btn-primary" id="searchBtn">Search</button>
+                    <button type="submit" class="btn btn-primary" id="submitBtn">Clear Results</button>
                 </form>
             </div>
             <div class="col-md-12">
