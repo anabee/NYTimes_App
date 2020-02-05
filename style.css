@@ -1,0 +1,14 @@
+body {
+  text-align: left;
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+  border-bottom: 10px;
+  line-height: 1;
+}
+
+.container {
+  border-left: 3px solid black;
+  border-top: 3px solid black;
+  border-right: 3px solid black;
+  border-bottom: 3px solid black;
+}
