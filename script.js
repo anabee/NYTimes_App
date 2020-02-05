@@ -7,7 +7,6 @@ $(document).ready(function(){
         $(".articles").empty();
         var queryURL = "";
         var searchTerm = $("#searchTermInput").val(); //we get input
-        console.log(searchTerm);
         var number= $("#numRecordsInput").val(); //we get input
         var start= $("#startYearInput").val(); //we get input
         var end=$("#endYearInput").val(); //we get input
@@ -25,10 +24,10 @@ $(document).ready(function(){
         queryURL = tempURL + searchTerm; 
 
         if (start != ""){
-            queryURL += "&" +start;
+            queryURL += "&" +tempBDate;
         }
         if(end != ""){
-            queryURL += "&" + end;
+            queryURL += "&" + tempEDate;
         }
 
         queryURL += "&" + tempKey;
