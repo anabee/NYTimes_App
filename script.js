@@ -2,10 +2,11 @@ $(document).ready(function(){
 
     
 
-    $(".btn").on("click",function(event){
+    $("#searchBtn").on("click",function(event){
         event.preventDefault();
         var queryURL = "";
         var searchTerm = $("#searchTermInput").val(); //we get input
+        console.log(searchTerm);
         var number= $("#numRecordsInput").val(); //we get input
         var start= $("#startYearInput").val(); //we get input
         var end=$("#endYearInput").val(); //we get input
@@ -16,12 +17,16 @@ $(document).ready(function(){
         var tempBDate = "begin_date=" + start  +"0101";
         var tempEDate = "end_date=" + end + "1231";
 
+        if(searchTerm ==""){
+            return;
+        }
+
         queryURL = tempURL + searchTerm; 
 
-        if (start != null){
+        if (start != ""){
             queryURL += "&" +start;
         }
-        if(end != null){
+        if(end != ""){
             queryURL += "&" + end;
         }
 
@@ -31,9 +36,7 @@ $(document).ready(function(){
             url: queryURL,
             method: "GET"
         }).then(function(response){
-            console.log(response);
             var results = response.response.docs;
-            console.log(results);
             for (i=0; i < number; i++){
                 var tempHead = $("<div>");
                 tempHead.attr("class", "articleResults");
@@ -52,6 +55,11 @@ $(document).ready(function(){
                 $(".articles").append(tempHead);
             }
         });
+
+        $("#submitBtn").on("click",function(){
+            $(".form-control").val("");
+            $(".articles").empty();
+        })
     })
     
 
