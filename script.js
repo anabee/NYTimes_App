@@ -58,6 +58,7 @@ $(document).ready(function(){
         });
 
         $("#submitBtn").on("click",function(){
+            event.preventDefault();
             $(".form-control").val("");
             $(".articles").empty();
         })
