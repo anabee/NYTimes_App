@@ -1,13 +1,11 @@
-<<<<<<< HEAD
 .container-fluid {
     text-align: center;
 }
 
 .header-styling {
-    background-image: linear-gradient(#708090
+    background-image: linear-gradient(#ADD8E6
     , #4682B4);
 }
-=======
 body {
   text-align: left;
   color: black;
@@ -23,4 +21,3 @@ body {
   border-bottom: 2px solid black;
   margin-top: 80px;
 }
->>>>>>> 39a8527a3820fc25af56552c191cfcfedc88ffed
