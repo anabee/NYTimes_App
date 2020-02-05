@@ -2,7 +2,7 @@ $(document).ready(function(){
 
     
 
-    $(".btn").on("click",function(event){
+    $("#searchBtn").on("click",function(event){
         event.preventDefault();
         var queryURL = "";
         var searchTerm = $("#searchTermInput").val(); //we get input
@@ -52,6 +52,11 @@ $(document).ready(function(){
                 $(".articles").append(tempHead);
             }
         });
+
+        $("#submitBtn").on("click",function(){
+            $(".form-control").val("");
+            $(".articles").empty();
+        })
     })
     
 
