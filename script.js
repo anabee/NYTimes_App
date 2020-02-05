@@ -57,7 +57,7 @@ $(document).ready(function(){
             }
         });
 
-        $("#submitBtn").on("click",function(){
+        $("#submitBtn").on("click",function(event){
             event.preventDefault();
             $(".form-control").val("");
             $(".articles").empty();
