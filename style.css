@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .container-fluid {
     text-align: center;
 }
@@ -6,3 +7,20 @@
     background-image: linear-gradient(#708090
     , #4682B4);
 }
+=======
+body {
+  text-align: left;
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+  border-bottom: 10px;
+  line-height: 1;
+}
+
+.container {
+  border-left: 2px solid black;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  margin-top: 80px;
+}
+>>>>>>> 39a8527a3820fc25af56552c191cfcfedc88ffed
